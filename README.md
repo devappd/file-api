@@ -44,8 +44,6 @@ Has the special method `setNodeChunkedEncoding()`
 File
 ----
 
-In the browser, `File` has no constructor. In Node, it does.
-
 `node-mime` is used for extension-based automatic `ContentType` detection (uses `name` if available, or `path` if not)
 
 **File(StringUriPath)**
@@ -107,6 +105,18 @@ In the browser, `File` has no constructor. In Node, it does.
       size: fileStat.size || Buffer.length
     );
 
+**File(Array[ArrayBuffer], String, Object)**
+
+    var file = new File(
+      [ [ 0x0, 0x1, 0xFF, ... ] ],   // required, file bits
+
+      "myfile.txt",                  // required, filename
+
+      {
+        type: "text/plain",          // optional, MIME type. Otherwise, generated based on filename
+        lastModified: 1611162000     // optional, date modified. Defaults to Date.now()
+      }
+    );
 
 FileReader
 ----
