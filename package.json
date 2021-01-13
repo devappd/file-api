@@ -1,16 +1,17 @@
 {
-  "name": "file-api",
+  "name": "@devappd/nodejs-html5-file-api",
   "description": "HTML5 FileAPI for Node.js",
-  "url": "http://github.com/node-file-api/file-api",
+  "url": "http://github.com/devappd/file-api",
   "keywords": [
     "html5",
     "jsdom",
     "file-api"
   ],
   "author": "AJ ONeal <coolaj86@gmail.com>",
-  "contributors": [],
+  "license": "Apache",
+  "contributors": ["devappd"],
   "dependencies": {
-    "File": "https://github.com/devappd/File/archive/master.tar.gz",
+    "@devappd/nodejs-html5-file": "^0.11.0",
     "FileList": "^0.10.2",
     "bufferjs": "^2.0.0",
     "file-error": "^0.10.2",
@@ -20,5 +21,5 @@
     "remedial": "^1.0.7"
   },
   "main": "./index",
-  "version": "0.10.4"
+  "version": "0.11.0"
 }

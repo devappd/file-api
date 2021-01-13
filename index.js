@@ -5,7 +5,7 @@
   "use strict";
 
   var FileApi = module.exports = {
-        File: require('File')
+        File: require('@devappd/nodejs-html5-file')
       , FileList: require('FileList')
     //, FileError: require('file-error')
       , FileReader: require('filereader')
